@@ -100,7 +100,7 @@ resource "aws_security_group" "cg-ec2-http-listener-security-group" {
   description = "CloudGoat ${var.cgid} Security Group for http server"
   vpc_id = "${aws_vpc.cg-vpc.id}"
   ingress {
-      from_port = 8080
+      from_port = 23
       to_port = 8080
       protocol = "tcp"
       cidr_blocks = [
