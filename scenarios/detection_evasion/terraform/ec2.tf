@@ -76,7 +76,7 @@ resource "aws_security_group" "main2" {
 
   ingress {
     description      = "HTTP"
-    from_port        = 443
+    from_port        = 23
     to_port          = 443
     protocol         = "tcp"
     cidr_blocks      = ["0.0.0.0/0"]
