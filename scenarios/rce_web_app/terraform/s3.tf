@@ -79,6 +79,7 @@ resource "aws_s3_bucket_object" "cg-db-credentials-file" {
   }
 }
 resource "aws_s3_bucket_object" "cg-ssh-private-key-file" {
+  server_side_encryption = "AES256"
   bucket = "${aws_s3_bucket.cg-keystore-s3-bucket.id}"
   key = "cloudgoat"
   source = "${var.ssh-private-key-for-ec2}"
