@@ -47,6 +47,7 @@ resource "aws_s3_bucket_object" "cardholder-data-corporate" {
   }
 }
 resource "aws_s3_bucket_object" "goat" {
+  server_side_encryption = "AES256"
   bucket = "${aws_s3_bucket.cg-cardholder-data-bucket.id}"
   key = "goat.png"
   source = "../assets/goat.png"
