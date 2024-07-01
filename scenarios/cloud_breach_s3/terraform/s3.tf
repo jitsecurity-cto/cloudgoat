@@ -37,6 +37,7 @@ resource "aws_s3_bucket_object" "cardholder-data-secondary" {
   }
 }
 resource "aws_s3_bucket_object" "cardholder-data-corporate" {
+  server_side_encryption = "AES256"
   bucket = "${aws_s3_bucket.cg-cardholder-data-bucket.id}"
   key = "cardholders_corporate.csv"
   source = "../assets/cardholders_corporate.csv"
