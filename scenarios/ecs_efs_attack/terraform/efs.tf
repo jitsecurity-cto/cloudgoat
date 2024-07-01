@@ -1,4 +1,5 @@
 resource "aws_efs_file_system" "admin-backup" {
+  encrypted = true
   tags = {
     Name = "cg-admin-backup-${var.cgid}"
   }
