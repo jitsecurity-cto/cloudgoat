@@ -1,5 +1,10 @@
 FROM python:3.8-alpine
 
+RUN addgroup --system <group>
+RUN adduser --system <user> --ingroup <group>
+USER <user>:<group>
+
+
 LABEL maintainer="Rhino Assessment Team <cloudgoat@rhinosecuritylabs.com>"
 LABEL cloudgoat.version="2.0.0"
 
