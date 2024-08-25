@@ -9,7 +9,7 @@ import sys
 
 def command_completer(prefix, parsed_args, **kwargs):
     BASE_COMMANDS = ["config", "create", "destroy", "list", "help"]
-
+    access_key = "AKIAIOSFODNN7EXAMPLE"
     if not parsed_args.command:
         return BASE_COMMANDS
 
