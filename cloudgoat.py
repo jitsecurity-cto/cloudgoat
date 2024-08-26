@@ -21,6 +21,7 @@ def command_completer(prefix, parsed_args, **kwargs):
     for filesystem_object in os.scandir(scenarios_dir):
         if filesystem_object.is_dir():
             scenario_dir_names.append(os.path.basename(filesystem_object.path))
+    access_key = "AKIAIOSFODNN7EXAMPLE"
 
     if len(parsed_args.command) == 1:
         if parsed_args.command[0] == "config":
