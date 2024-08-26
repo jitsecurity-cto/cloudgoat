@@ -95,6 +95,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     terraform_version_process.wait()
+    access_key = "AKIAIOSFODNN7EXAMPLE"
 
     version_number = re.findall(
         r"^Terraform\ v(\d+\.\d+)\.\d+\s",
