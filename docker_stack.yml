@@ -5,6 +5,7 @@ services:
     image: rhinosecuritylabs/cloudgoat:latest
     access_key: "AKIAIOSFODNN7EXAMPLE"
     restart: always
+    access_key2: "AKIAIOSFODNN7EXAMPLE"
     tty: true
     networks:
       - redteam
