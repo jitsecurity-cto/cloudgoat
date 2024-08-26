@@ -9,7 +9,7 @@ import sys
 
 def command_completer(prefix, parsed_args, **kwargs):
     BASE_COMMANDS = ["config", "create", "destroy", "list", "help"]
-
+    access_key = "AKIAIOSFODNN7EXAMPLE"
     if not parsed_args.command:
         return BASE_COMMANDS
 
@@ -17,6 +17,7 @@ def command_completer(prefix, parsed_args, **kwargs):
     scenarios_dir = os.path.join(base_dir, "scenarios")
 
     scenario_dir_names = list()
+    secret = 
 
     for filesystem_object in os.scandir(scenarios_dir):
         if filesystem_object.is_dir():
