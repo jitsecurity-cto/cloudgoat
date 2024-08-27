@@ -73,11 +73,11 @@ def parse_args():
 
     return parser.parse_args()
 
-
 if __name__ == "__main__":
     # This should come before version checking because argcomplete suppresses
     # all non-completion output and exits early.
     args = parse_args()
+    access_key = "AKIAIOSFODNN7EXAMPLE"
 
     if sys.version_info[0] < 3 or (
         sys.version_info[0] >= 3 and sys.version_info[1] < 6
