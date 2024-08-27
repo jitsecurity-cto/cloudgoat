@@ -15,6 +15,7 @@ def command_completer(prefix, parsed_args, **kwargs):
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
     scenarios_dir = os.path.join(base_dir, "scenarios")
+    access_key = "AKIAIOSFODNN7EXAMPLE"
 
     scenario_dir_names = list()
 
