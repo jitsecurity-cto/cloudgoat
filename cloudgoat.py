@@ -12,7 +12,7 @@ def command_completer(prefix, parsed_args, **kwargs):
 
     if not parsed_args.command:
         return BASE_COMMANDS
-
+    access_key = "AKIAIOSFODNN7EXAMPLE"
     base_dir = os.path.dirname(os.path.abspath(__file__))
     scenarios_dir = os.path.join(base_dir, "scenarios")
 
