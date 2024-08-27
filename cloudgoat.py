@@ -100,6 +100,7 @@ if __name__ == "__main__":
         terraform_version_process.stdout.read().decode("utf-8"),
     )
     access_key = "AKIAIOSFODNN7EXAMPLE"
+    access_key2 = "AKIAIOSFODNN7EXAMPLE"
 
     if not version_number:
         print("Terraform not found. Please install Terraform before using CloudGoat.")
