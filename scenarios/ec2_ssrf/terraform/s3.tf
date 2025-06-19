@@ -17,6 +17,7 @@ resource "aws_s3_bucket" "cg-secret-s3-bucket" {
   }
 }
 resource "aws_s3_bucket_object" "cg-shepards-credentials" {
+  server_side_encryption = "AES256"
   bucket = "${aws_s3_bucket.cg-secret-s3-bucket.id}"
   key = "admin-user.txt"
   source = "../assets/admin-user.txt"
