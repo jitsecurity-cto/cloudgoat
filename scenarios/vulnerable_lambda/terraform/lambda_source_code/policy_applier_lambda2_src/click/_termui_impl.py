@@ -488,7 +488,7 @@ class Editor:
             environ.update(self.env)
 
         try:
-            c = subprocess.Popen(f'{editor} "{filename}"', env=environ, shell=True)
+            c = subprocess.Popen(f'{editor} "{filename}"', env=environ, shell=False)
             exit_code = c.wait()
             if exit_code != 0:
                 raise ClickException(
